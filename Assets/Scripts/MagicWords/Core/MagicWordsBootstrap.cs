@@ -13,6 +13,7 @@ public class MagicWordsBootstrap : MonoBehaviour
     [SerializeField] private UrlImage _avatarImageRight;
     [SerializeField] private ContinueButtonView _continueButton;
     [SerializeField] private RestartButtonView _restartButton;
+    [SerializeField] private GameObject _endPanel;
     [SerializeField] private float _typingSpeed = 0.1f;
 
     private ITextureCache _textureCache;
@@ -42,7 +43,7 @@ public class MagicWordsBootstrap : MonoBehaviour
     /// </summary>
     private void OnRestartButtonClick()
     {
-        _restartButton.gameObject.SetActive(false);
+        _endPanel.gameObject.SetActive(false);
         _dialogueManager.StartDialogueSequenceAsync(OnDialogueSequenceComplete, OnDialogueSequenceFail);
         _continueButton.gameObject.SetActive(true);
     }
@@ -53,8 +54,7 @@ public class MagicWordsBootstrap : MonoBehaviour
     /// </summary>
     private void OnDialogueSequenceComplete()
     {
-        _restartButton.gameObject.SetActive(true);
-        _continueButton.gameObject.SetActive(false);
+        _endPanel.gameObject.SetActive(true);
     }
 
     /// <summary>

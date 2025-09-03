@@ -8,11 +8,6 @@ public class RestartButtonView : MonoBehaviour
 
     private Action _onClick;
 
-    private void Awake()
-    {
-        gameObject.SetActive(false);
-    }
-
     public void Initialize(Action onButtonClick)
     {
         _onClick = onButtonClick;

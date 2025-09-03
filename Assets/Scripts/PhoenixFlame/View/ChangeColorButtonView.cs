@@ -26,5 +26,6 @@ public class ChangeColorButtonView : MonoBehaviour
     private void OnButtonClick()
     {
         _animator.SetTrigger(TRIGGER_EVENT_NAME);
+        _button.gameObject.SetActive(false);
     }
 }

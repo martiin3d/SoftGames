@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 /// <summary>
@@ -6,10 +7,17 @@ using UnityEngine;
 public class PhoenixFlameBootstrap : MonoBehaviour
 {
     [SerializeField] private ChangeColorButtonView _changeColorButton;
+    [SerializeField] private FireAnimationManager _fireAnimationManager;
     [SerializeField] private Animator _animator;
 
     private void Awake()
     {
         _changeColorButton.Initialize(_animator);
+        _fireAnimationManager.Initialize(OnAnimationEnd);
+    }
+
+    private void OnAnimationEnd()
+    {
+        _changeColorButton.gameObject.SetActive(true);
     }
 }

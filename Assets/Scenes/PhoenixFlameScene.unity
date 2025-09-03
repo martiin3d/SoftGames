@@ -581,6 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _changeColorButton: {fileID: 355897606}
+  _fireAnimationManager: {fileID: 6485765519229082275}
   _animator: {fileID: 6485765519229082274}
 --- !u!4 &635052774
 Transform:
@@ -11241,6 +11242,7 @@ GameObject:
   - component: {fileID: 4223028132849795325}
   - component: {fileID: 6485765519229082272}
   - component: {fileID: 6485765519229082274}
+  - component: {fileID: 6485765519229082275}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -11471,6 +11473,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6485765519229082275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4223028132849795324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99502314bba3c449befce6d22f96700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &6659834541359467176
 ParticleSystem:
   m_ObjectHideFlags: 0

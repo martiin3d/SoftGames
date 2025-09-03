@@ -126,5 +126,4 @@ Shader "PhoenixFlame/Fire"
 
 		ENDCG
 	}
-	CustomEditor "ASEMaterialInspector"
 }

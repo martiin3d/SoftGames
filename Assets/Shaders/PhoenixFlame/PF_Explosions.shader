@@ -124,5 +124,4 @@ Shader "PhoenixFlame/Erosion"
 
 		ENDCG
 	}
-	CustomEditor "ASEMaterialInspector"
 }
